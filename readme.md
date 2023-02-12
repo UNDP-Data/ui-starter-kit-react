@@ -31,16 +31,17 @@ This projest is bootstrapped with [`Vite`](https://vitejs.dev/) and was created 
 Run the terminal or command prompt and then run the following
 
 ```
-git clone https://github.com/UNDP-Data/Access-All-Data-Viz.git
-cd Access-All-Data-Viz
+git clone https://github.com/UNDP-Data/{{projectName}}.git
+cd {{projectName}}
 npm install
 ```
 
 ## Local Development
-_Tutorial to deploy the app locally_
+_Tutorial to deploy the app localy_
 
 ## Available Scripts
-_All available script for the projects like `build` or `start`_
+* `npm run dev`: Executes `vite` and start the local server for local deployment.
+* `npm run build`: Executes `tsc && vite build` and builds the app for production and deployment.
 
 ## Tooling Setup
 This project uses ESLint integrated with prettier, which verifies and formats your code so you don't have to do it manually. You should have your editor set up to display lint errors and automatically fix those which it is possible to fix. See [http://eslint.org/docs/user-guide/integrations](http://eslint.org/docs/user-guide/integrations).

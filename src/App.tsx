@@ -1,32 +1,24 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import undpLogo from './assets/undp-logo-blue.svg';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className='App'>
+    <div className='undp-container flex-div flex-wrap flex-hor-align-center margin-top-13 margin-bottom-13'>
       <div>
-        <a href='https://vitejs.dev' target='_blank' rel='noreferrer'>
-          <img src='/vite.svg' className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://reactjs.org' target='_blank' rel='noreferrer'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
+        <img
+          src={undpLogo}
+          className='logo react'
+          alt='React logo'
+          width='72px'
+          style={{ margin: 'auto' }}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button type='button' onClick={() => setCount(c => c + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <h3
+        className='undp-typography'
+        style={{ textAlign: 'center', width: '100%' }}
+      >
+        This is template for building visualization and frontend project for
+        UNDP Data Futures Platform
+      </h3>
     </div>
   );
 }
