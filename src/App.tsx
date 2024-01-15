@@ -16,8 +16,11 @@ function App() {
         className='undp-typography'
         style={{ textAlign: 'center', width: '100%' }}
       >
-        This is template for building visualization and frontend project for
-        UNDP Data Futures Platform
+        This is template for building visualization and frontend project
+        maintained by UNDP&apos;s SDG Integration Team.
+        <br />
+        <br />
+        Contact us at data@undp.org if you have any feedback or questions.
       </h3>
     </div>
   );
