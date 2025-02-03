@@ -4,11 +4,11 @@ import undpLogo from './assets/undp-logo-blue.svg';
 
 function App() {
   return (
-    <div>
+    <div className='m-5'>
       <div>
         <img
           src={undpLogo}
-          className='logo react'
+          className='logo react mb-8'
           alt='React logo'
           width='72px'
           style={{ margin: 'auto' }}
