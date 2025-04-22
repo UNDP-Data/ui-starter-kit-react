@@ -9,7 +9,6 @@ Doc for the UI kit can be found [here](https://icy-moss-09ab08f10.4.azurestatica
 * [Steps to integrate the vis in static page](#section-02)
 * [Pages on DFx where This Viz is Used](#section-03)
 * [Related Repos](#section-04)
-* [Global CSS Files and Repo](#section-05)
 * [Build With](#section-06)
 * [Installation](#section-07)
 * [Local Deployment](#section-08)
@@ -31,9 +30,7 @@ Add the following div in the page
 Apart from the mentioned `div` above the following `script` and `link` needs to be added to the `head` or in the embed code
 ```
 <script defer="defer" type="module" src="<Link to the Visualization Mentioned Above>/index.js"></script>
-<link rel="stylesheet" href="https://undp-data.github.io/stylesheets-for-viz/style/mainStyleSheet.css" />
-<link rel="stylesheet" href="https://undp-data.github.io/stylesheets-for-viz/style/StyleForGraphingInterface.css" />
-<link rel="stylesheet" href="https://undp-data.github.io/stylesheets-for-viz/style/StyleForGraph.css" />
+<link rel="stylesheet" src="<Link to the Visualization Mentioned Above>/style.css"></link>
 ```
 
 ## Pages on DFx Where the Visualization is Used<a name="section-03"></a>
@@ -41,22 +38,11 @@ _All the pages on the DFx or other places like viva topics etc. where this visua
 
 ## Related Repos<a name="section-04"></a>
 * [__name of the data repo__](link to data repo): This is the data sheet for visualization
-* [__stylesheet-for-viz__](https://github.com/UNDP-Data/stylesheets-for-viz): Repo which defines the css settings for the project
-
-## Global CSS for UI and Graphs<a name="section-05"></a>
-__Git Repo__: https://github.com/UNDP-Data/stylesheets-for-viz
-
-__Link for stylesheets__
-* https://undp-data.github.io/stylesheets-for-viz/style/mainStyleSheet.css
-* https://undp-data.github.io/stylesheets-for-viz/style/StyleForGraphingInterface.css
-* https://undp-data.github.io/stylesheets-for-viz/style/StyleForGraph.css
 
 ## Build with<a name="section-06"></a>
-* __React__: Used as MVC framework.
-* __styled-components__: Utilizes tagged template literals and the power of CSS, allows to write actual CSS code to style the components in JS/TS.
-* __Various D3 Libraries__: Used for visualizations, adding interaction and reading the csv data file.
-* __AntD__: For UI elements like dropdown, buttons, checkbox, and slider.
-* __lodash__: Used for manipulating and iterating arrays and objects.
+* __React(v19.x)__: Used as MVC framework.
+* __@undp/design-system-react__: For UI elements. Documentation can be found [here](https://kind-river-0135cff03.4.azurestaticapps.net/)
+* __@undp/data-viz__: For visualizations. Documentation can be found [here](https://jolly-field-038560703.6.azurestaticapps.net/) 
 
 ## Installation<a name="section-07"></a>
 This project uses `npm`. For installation you will need to install `node` and `npm`, if you don't already have it. `node` and `npm` can be installed from [here](https://nodejs.org/en/download/).
@@ -83,6 +69,7 @@ The page will reload if you make edits. You will also see any lint errors in the
 ## Available Scripts<a name="section-09"></a>
 * `npm run dev`: Executes `vite` and start the local server for local deployment.
 * `npm run build`: Executes `tsc && vite build` and builds the app for production and deployment.
+* `npm run clean`: Executes `rimraf node_modules && rimraf dist && rimraf package-lock.json` and remove node_modules folder, dist folder and package-lock.json.
 
 ## Tooling Setup<a name="section-10"></a>
 This project uses ESLint integrated with prettier, which verifies and formats your code so you don't have to do it manually. You should have your editor set up to display lint errors and automatically fix those which it is possible to fix. See [http://eslint.org/docs/user-guide/integrations](http://eslint.org/docs/user-guide/integrations).
