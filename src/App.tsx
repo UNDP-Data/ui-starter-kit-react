@@ -1,7 +1,8 @@
 import { H3 } from '@undp/design-system-react';
 
-import '@/styles/fonts.css'; 
+import '@/styles/fonts.css';
 import '@undp/design-system-react/dist/style.css';
+import '@undp/data-viz/dist/style.css';
 import undpLogo from './assets/undp-logo-blue.svg';
 
 function App() {
