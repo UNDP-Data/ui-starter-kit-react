@@ -1,6 +1,6 @@
 # UI Starter Kit (replace with the title of the Project)
 
-#### His is a template to initiate project with preinstalled library for design system and data visualization and tooling for linting and prettier.
+This is a template to initiate project with preinstalled library for design system and data visualization and tooling for linting and prettier.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 ## Deployment<a name="deployment"></a>
 
-The Production site deployed using Azure Static Web App and work flow can be found [here]({{link to the site here}})
+The Production site deployed using Azure Static Web App and the workflow yml can be found in `.github/workflow` folder
 
 ## Steps to Integrating the Visualization in the Data Future Platform or Any Other Page<a name="section-02"></a>
 
@@ -40,7 +40,7 @@ Apart from the mentioned `div` above the following `script` and `link` needs to 
 
 ## Pages on DFx Where the Visualization is Used<a name="section-03"></a>
 
-_All the pages on the DFx or other places like viva topics etc. where this visualization is embeded or used._
+_All the pages on the DFx or other places like viva topics etc. where this visualization is embedded or used._
 
 ## Related Repos<a name="section-04"></a>
 
