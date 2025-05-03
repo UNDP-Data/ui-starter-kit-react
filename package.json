@@ -1,5 +1,5 @@
 {
-  "name": "dv-visualization-template-viz",
+  "name": "undp-visualization-starter-kit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,7 @@
     "lint": "npx eslint --fix && npx prettier . --write"
   },
   "dependencies": {
-    "@undp/data-viz": "^0.0.56",
+    "@undp/data-viz": "^0.0.58",
     "@undp/design-system-react": "^0.0.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
