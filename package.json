@@ -8,11 +8,12 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "clean": "rimraf node_modules && rimraf dist && rimraf package-lock.json",
+    "install:build": "npm install && tsc && vite build",
     "lint": "npx eslint --fix && npx prettier . --write"
   },
   "dependencies": {
-    "@undp/data-viz": "^0.0.58",
-    "@undp/design-system-react": "^0.0.4",
+    "@undp/data-viz": "^0.0.62",
+    "@undp/design-system-react": "^0.0.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
