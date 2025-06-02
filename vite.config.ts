@@ -7,6 +7,24 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), eslint(), tailwindcss()],
+  css: {
+    postcss: {
+      plugins: [
+        {
+          postcssPlugin: 'remove-layers',
+          AtRule: {
+            layer(rule) {
+              // Move all children up one level and remove the @layer wrapper
+              rule.each(child => {
+                rule.parent.insertAfter(rule, child);
+              });
+              rule.remove();
+            },
+          },
+        },
+      ],
+    },
+  },
   build: {
     cssCodeSplit: false,
     rollupOptions: {
