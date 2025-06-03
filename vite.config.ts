@@ -14,11 +14,12 @@ export default defineConfig({
           postcssPlugin: 'remove-layers',
           AtRule: {
             layer(rule) {
-              // Move all children up one level and remove the @layer wrapper
-              rule.each(child => {
-                rule.parent.insertAfter(rule, child);
-              });
-              rule.remove();
+              if (rule.params !== 'base') {
+                rule.each(child => {
+                  rule.parent.insertAfter(rule, child);
+                });
+                rule.remove();
+              }
             },
           },
         },
