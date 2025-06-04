@@ -35,7 +35,7 @@ Apart from the mentioned `div` above the following `script` and `link` needs to 
 
 ```
 <script defer="defer" type="module" src="<Link to the Visualization Mentioned Above>/index.js"></script>
-<link rel="stylesheet" src="<Link to the Visualization Mentioned Above>/style.css"></link>
+<link rel="stylesheet" href="<Link to the Visualization Mentioned Above>/style.css"></link>
 ```
 
 ## Pages on DFx Where the Visualization is Used<a name="section-03"></a>
