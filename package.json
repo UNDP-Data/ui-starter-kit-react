@@ -13,8 +13,8 @@
     "update-undp-libraries": "npm i @undp/design-system-react@latest @undp/data-viz@latest && git add . && git commit -m \"update libraries\" && git push"
   },
   "dependencies": {
-    "@undp/data-viz": "^0.0.87",
-    "@undp/design-system-react": "^0.0.71",
+    "@undp/data-viz": "^0.0.88",
+    "@undp/design-system-react": "^0.0.72",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tailwind-animate": "^0.2.10",

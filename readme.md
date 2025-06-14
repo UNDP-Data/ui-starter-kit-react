@@ -2,6 +2,8 @@
 
 This is a template to initiate project with preinstalled library for design system and data visualization and tooling for linting and prettier.
 
+Please note there are postCSS configuration in the `vite.config.ts` which remove the base layer from the build css and also adds a parent class of `undp-container` to all the classes, ids and elements in the build css. Please edite the `vite.config.ts` if you would like to remove it.
+
 ## Table of Contents
 
 - [Link for the visualization](#section-01)
