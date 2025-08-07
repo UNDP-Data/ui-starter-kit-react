@@ -4,13 +4,14 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
 import tailwindcss from '@tailwindcss/vite';
-import { AtRule } from 'postcss';
+// import { AtRule } from 'postcss';
 
 export default defineConfig({
   plugins: [react(), eslint(), tailwindcss()],
   css: {
     postcss: {
       plugins: [
+        /*
         {
           postcssPlugin: 'remove-layers', // If you want to remove base layer
           AtRule: {
@@ -44,6 +45,7 @@ export default defineConfig({
             });
           },
         },
+        */
       ],
     },
   },
