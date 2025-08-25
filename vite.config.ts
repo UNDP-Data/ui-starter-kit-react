@@ -5,9 +5,15 @@ import react from '@vitejs/plugin-react';
 import eslint from '@nabla/vite-plugin-eslint';
 import tailwindcss from '@tailwindcss/vite';
 import { AtRule } from 'postcss';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
-  plugins: [react(), eslint(), tailwindcss()],
+  plugins: [
+    react(),
+    eslint(),
+    tailwindcss(),
+    visualizer({ filename: 'stats.html', open: true }),
+  ],
   css: {
     postcss: {
       plugins: [
@@ -71,6 +77,7 @@ export default defineConfig({
         entryFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
       },
+      treeshake: true,
     },
   },
   server: {
