@@ -74,6 +74,7 @@ export default defineConfig({
     cssCodeSplit: false,
     rollupOptions: {
       output: {
+        manualChunks: undefined,
         entryFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
       },
