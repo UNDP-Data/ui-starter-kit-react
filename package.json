@@ -16,8 +16,8 @@
     "update-undp-libraries": "npm i @undp/design-system-react@latest @undp/data-viz@latest && git add . && git commit -m \"update libraries\" && git push"
   },
   "dependencies": {
-    "@undp/data-viz": "^1.4.5",
-    "@undp/design-system-react": "^1.2.8",
+    "@undp/data-viz": "^1.4.8",
+    "@undp/design-system-react": "^1.2.9",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwind-animate": "^0.2.10",
@@ -28,7 +28,7 @@
     "@eslint/config-array": "^0.21.0",
     "@eslint/js": "^9.34.0",
     "@nabla/vite-plugin-eslint": "^2.0.6",
-    "@tailwindcss/postcss": "^4.1.12",
+    "@tailwindcss/postcss": "^4.1.13",
     "@tailwindcss/vite": "^4.1.12",
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.12",
@@ -46,6 +46,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "postcss": "^8.5.6",
+    "postcss-nested": "^7.0.2",
     "prettier": "^3.6.2",
     "rimraf": "^6.0.1",
     "rollup-plugin-visualizer": "^6.0.3",

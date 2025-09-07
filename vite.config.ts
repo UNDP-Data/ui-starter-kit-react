@@ -3,22 +3,24 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import eslint from '@nabla/vite-plugin-eslint';
-import tailwindcss from '@tailwindcss/vite';
 import { AtRule } from 'postcss';
 import { visualizer } from 'rollup-plugin-visualizer';
+import postcssNested from 'postcss-nested';
+import tailwindcss from '@tailwindcss/postcss';
 
 export default defineConfig({
   plugins: [
     react(),
     eslint(),
-    tailwindcss(),
     visualizer({ filename: 'stats.html', open: true }),
   ],
   css: {
     postcss: {
       plugins: [
+        postcssNested(),
+        tailwindcss(),
         {
-          postcssPlugin: 'remove-layers', // If you want to remove base layer
+          postcssPlugin: 'remove-layers', // If you want to flatten layers except base layer
           AtRule: {
             layer(rule) {
               if (rule.params !== 'base') {
@@ -32,7 +34,7 @@ export default defineConfig({
         },
         {
           postcssPlugin: 'wrap-with-undp-container', // If you want to wrap all the class in .undp-container
-          Once(root) {
+          OnceExit(root) {
             const skipSelectors = ['html', 'body', ':root', ':host'];
             root.walkRules(rule => {
               if (rule.parent && rule.parent.type === 'atrule') {
@@ -52,7 +54,7 @@ export default defineConfig({
         },
         {
           postcssPlugin: 'move-media-queries-last', // If you want to reorder media queries to the end
-          Once(root) {
+          OnceExit(root) {
             const mediaQueries = [];
 
             // Collect all media queries
