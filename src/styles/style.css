@@ -1,3 +1,6 @@
+@import '@undp/data-viz/style.css';
+@import '@undp/design-system-react/style.css';
+
 @import 'tailwindcss';
 
 @config '../../tailwind.config.js';
