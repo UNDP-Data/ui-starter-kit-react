@@ -36,10 +36,11 @@ Add the following div in the page
 Apart from the mentioned `div` above the following `script` and `link` needs to be added to the `head` or in the embed code
 
 ```
-<script defer="defer" type="module" src="{{Link to the Visualization Mentioned Above}}/index.js"></script>
-<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/react-{{hash}}.js">
-<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/undp-{{hash}}.js">
-<link rel="stylesheet" href="{{Link to the Visualization Mentioned Above}}/style.css"></link>
+<link rel="dns-prefetch" href="{{Link to the Visualization}}">
+<script defer="defer" type="module" src="{{Link to the Visualization}}/index.js"></script>
+<link rel="modulepreload" crossorigin href="{{Link to the Visualization}}/react-{{hash}}.js">
+<link rel="modulepreload" crossorigin href="{{Link to the Visualization}}/undp-{{hash}}.js">
+<link rel="stylesheet" href="{{Link to the Visualization}}/style.css"></link>
 ```
 
 ## Pages on DFx Where the Visualization is Used<a name="section-03"></a>
