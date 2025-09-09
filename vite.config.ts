@@ -76,9 +76,13 @@ export default defineConfig({
     cssCodeSplit: false,
     rollupOptions: {
       output: {
-        manualChunks: undefined,
-        entryFileNames: '[name].js',
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          undp: ['@undp/data-viz', '@undp/design-system-react'],
+        },
+        chunkFileNames: '[name]-[hash].js',
         assetFileNames: '[name].[ext]',
+        entryFileNames: '[name].js',
       },
       treeshake: true,
     },
