@@ -76,9 +76,10 @@ export default defineConfig({
     cssCodeSplit: false,
     rollupOptions: {
       output: {
-        manualChunks: {
-          react: ['react', 'react-dom'],
-          undp: ['@undp/data-viz', '@undp/design-system-react'],
+        manualChunks(id) {
+          if (id.includes('node_modules/react')) return 'react';
+          if (id.includes('@undp/design-system-react')) return 'undp';
+          if (id.includes('@undp/data-viz')) return 'undp';
         },
         chunkFileNames: '[name]-[hash].js',
         assetFileNames: '[name].[ext]',

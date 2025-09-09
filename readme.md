@@ -37,8 +37,8 @@ Apart from the mentioned `div` above the following `script` and `link` needs to 
 
 ```
 <script defer="defer" type="module" src="{{Link to the Visualization Mentioned Above}}/index.js"></script>
-<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/react-{{hash-code}}.js">
-<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/undp-{{hash-code}}.js">
+<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/react-{{hash}}.js">
+<link rel="modulepreload" crossorigin href="{{Link to the Visualization Mentioned Above}}/undp-{{hash}}.js">
 <link rel="stylesheet" href="{{Link to the Visualization Mentioned Above}}/style.css"></link>
 ```
 
