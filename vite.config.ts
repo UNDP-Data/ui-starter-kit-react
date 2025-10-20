@@ -7,12 +7,16 @@ import { AtRule } from 'postcss';
 import { visualizer } from 'rollup-plugin-visualizer';
 import postcssNested from 'postcss-nested';
 import tailwindcss from '@tailwindcss/postcss';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   plugins: [
     react(),
     eslint(),
     visualizer({ filename: 'stats.html', open: true }),
+    viteStaticCopy({
+      targets: [{ src: 'staticwebapp.config.json', dest: '' }],
+    }),
   ],
   css: {
     postcss: {

@@ -38,6 +38,7 @@
     }
   ],
   "navigationFallback": {
-    "rewrite": "index.html"
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/*.js", "/*.css", "/*.png", "/*.jpg", "/*.svg"]
   }
 }
