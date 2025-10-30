@@ -16,8 +16,8 @@
     "update-undp-libraries": "npm i @undp/design-system-react@latest @undp/data-viz@latest && git add . && git commit -m \"update libraries\" && git push"
   },
   "dependencies": {
-    "@undp/data-viz": "^1.5.9",
-    "@undp/design-system-react": "^1.3.2",
+    "@undp/data-viz": "^2.0.4",
+    "@undp/design-system-react": "^1.5.0",
     "babel-plugin-react-compiler": "^1.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
